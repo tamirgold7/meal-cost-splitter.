@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Cost Splitter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Meal Cost Splitter</h1>
+    <form id="mealForm">
+        <label for="fixed_delivery_cost">Enter the fixed delivery cost:</label>
+        <input type="number" step="0.01" id="fixed_delivery_cost" required>
+
+        <label for="num_friends">Enter the number of friends:</label>
+        <input type="number" id="num_friends" required>
+
+        <button type="button" id="add_friends">Add Friends</button>
+        <div id="friends_container"></div>
+
+        <button type="submit">Calculate</button>
+    </form>
+    <div id="results"></div>
+
+
+<button type="button" id="restart">Restart</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
